@@ -1,0 +1,35 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<title><c:out value="${pageTitle}" /></title>
+<c:url value="/css/site.css" var="cssUrl" />
+<link rel="stylesheet" href="${cssUrl}" />
+</head>
+<body>
+	<header>
+		<h1>
+			MVC Exercises - Views Part 2: Models -
+			<c:out value="${pageTitle}" />
+		</h1>
+	</header>
+	<nav>
+		<ul>
+			<c:url var="listUrl" value="/productList" />
+			<li><a href="${listUrl}">Product List</a></li>
+			<c:url var="tableUrl" value="/productTable" />
+			<li><a href="${tableUrl}">Product Table</a></li>
+			<c:url var="tileUrl" value="/productTiles" />
+			<li><a href="${tileUrl}">Product Tiles</a></li>
+
+			<c:url var="detaulUrl" value="/productDetail">
+				<c:param name="productId" value="${product.productId }" />
+			</c:url>
+		</ul>
+
+	</nav>
+	<section id="main-content">

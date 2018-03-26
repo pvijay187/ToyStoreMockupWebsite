@@ -1,0 +1,116 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li.star {
+	padding: 0px;
+}
+
+section {
+	clear: both;
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	vertical-align: top;
+	text-align: center;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 7px;
+}
+
+.grayRow {
+	background-color: #C8C8C8;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.collapse {
+	border-collapse: collapse;
+}
+
+tr.border_bottom {
+	border-bottom: 1px solid black;
+	rowspan
+	=
+	2;
+}
+
+ul.list {
+	text-align: left;
+}
+
+.bSeller {
+	font color: red;
+}
+
+.detail_row {
+	padding: 15px;
+	display: inline-block;
+}
+
+.detail_container {
+	background-color: rgb(241, 242, 206);
+	border-radius: 45px;
+}
+
+.detail_box {
+	padding: 30px;
+}
+
+.bar {
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 2px;
+	min-width: 10px;
+}
